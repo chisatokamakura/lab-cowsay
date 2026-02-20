@@ -10,3 +10,7 @@ requires-python = ">=3.8"
 
 [project.scripts]
 cowsay = "cowsay.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["cowsay*"]
+exclude = ["img*"]
