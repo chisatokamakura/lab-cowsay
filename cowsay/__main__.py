@@ -2,7 +2,6 @@
 import argparse
 import textwrap
 
-
 def cowsay(text, width=40):
     wrapped = textwrap.wrap(text, width) if len(text) > width else [text]
     max_len = max( len(line) for line in wrapped )
